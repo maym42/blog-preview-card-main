@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap");
+:root {
+  /*## Colors*/
+  /*### Primary*/
+  --Yellow: hsl(47, 88%, 63%);
+  /*### Neutral*/
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+}
+body {
+  background-color: var(--Yellow);
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+  /*space*/
+  margin: 0 1em;
+  /*size*/
+  height: 100vh;
+  /*flex*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card {
+  background-color: var(--White);
+  border: 1px solid var(--Black);
+  border-radius: 1em;
+  padding: 1.25em;
+  box-shadow: 8px 8px 0px var(--Black);
+  /*sapce*/
+  margin-bottom: 1.5em;
+}
+.card .bigImg {
+  background-image: url(./assets/images/illustration-article.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5em;
+  /*size*/
+  width: 100%;
+  height: 12.5em;
+  /*space*/
+  margin-bottom: 1.5em;
+}
+
+.card .labelSubject {
+  background-color: var(--Yellow);
+  font-weight: bold;
+  border-radius: 0.25em;
+  /*size*/
+  width: fit-content;
+  /*space*/
+  padding: 0.5em 1.25em;
+}
+.card h1 {
+  font-size: 1.5em;
+}
+.card .content {
+  color: var(--Grey);
+  /*sapce*/
+  margin-bottom: 1.5em;
+}
+.card .author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.author .avatar {
+  background-image: url(./assets/images/image-avatar.webp);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  /*size*/
+  width: 2.5em;
+  height: 2.5em;
+  /*space*/
+  margin-right: 1em;
+}
+.author .fullName {
+  font-weight: bold;
+}
+/*-----------------------*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
