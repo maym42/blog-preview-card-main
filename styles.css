@@ -58,6 +58,7 @@ body {
 }
 .card h1 {
   font-size: 1.5em;
+  cursor: pointer;
 }
 .card h1:hover {
   color: var(--Yellow);
