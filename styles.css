@@ -20,6 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .card {
   background-color: var(--White);
@@ -52,8 +53,14 @@ body {
   /*space*/
   padding: 0.5em 1.25em;
 }
+.card .date {
+  font-weight: 600;
+}
 .card h1 {
   font-size: 1.5em;
+}
+.card h1:hover {
+  color: var(--Yellow);
 }
 .card .content {
   color: var(--Grey);
@@ -88,4 +95,30 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/*##################### Desktop #########################*/
+@media screen and (min-width: 700px) {
+  .card {
+    width: 20em;
+  }
+}
+
+/*#################### Mobile landscape view ######################*/
+@media only screen and (orientation: landscape) and (max-height: 600px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 35em;
+  }
+  .card .bigImg {
+    margin-right: 1.5em;
+    height: 100%;
+    background-position: left;
+  }
+}
+@media only screen and (orientation: landscape) and (max-height: 300px) {
+  body {
+    font-size: 12px;
+  }
 }
